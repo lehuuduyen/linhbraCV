@@ -1,0 +1,281 @@
+/* Body background color */
+body 
+{
+    background:rgb(170, 186, 219);
+}
+
+
+/*-------------Header----------------*/
+/* A. BIG BOX */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Box*/
+.header 
+{
+    background: radial-gradient(#fff,rgb(193, 205, 230));
+    margin: 40px 60px 0;
+}
+
+/* B. Outside BOX of Header */ 
+.container 
+{
+    max-width: 13000px;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* C. HEADER = Logo + Menu bar */
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/* Logo */
+.lylyLogo img
+{
+    width: 125px;
+    border-radius: 67px;
+}
+
+/* C2. MENU BAR */
+
+nav             /* Menu Bar move to right */
+{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul          /* No list icon showing */
+{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li       /* Space between words */
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a              /* No underline link + color */
+{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+}
+
+ .menu               /* Menu bar hover */ 
+ {
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: background 0.5s;
+ }
+.menu:hover          /* Menu bar hover */ 
+{  
+    background:rgb(193, 205, 230);
+}
+
+.cart               /* Add CART button */ 
+{
+    transition: background 0.5s;
+    border-radius: 30px;
+}
+.cart:hover         /* Add CART button HOVER */ 
+{
+    background:rgb(170, 186, 219);
+}
+
+/* D. LEFT & RIGHT STYLE BOX */
+
+.row            /* Outside box */
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2          /* Left & Right Box together */
+{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 h1      /* (left) H1 */
+{
+    font-size: 40px;
+    line-height: 42px;
+    margin: 25px 0;      /* space btw h1 & p */
+}
+
+.col-2 img     /* (right) Photo */
+{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.btn           /* Words with Background Color */
+{    
+    display: inline-block;
+    background: rgb(170, 186, 219);
+    color: rgb(8, 8, 8);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover 
+{
+    background:rgb(206, 215, 233);
+}
+
+
+
+
+
+/*-------------Body Shop Advantage--------------*/
+.body 
+{
+    background:white;
+    margin: 0 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Use row for the inside box */
+
+.col-3 
+{
+    width: 200px;
+}
+.col-3 img          /* Photos of Shop Advantage */
+{
+    width: 100%;
+    padding: 0px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+
+
+
+/*-------------Featured Products--------------*/
+.FeProduct 
+{
+    margin: 0 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background: radial-gradient(#fff,rgb(193, 205, 230));
+}
+
+.FeTuTitle           /* Title */
+{
+    text-align: center;
+    margin: 20px;
+}
+.FeTuTitle h1 
+{
+    font-size: 50px;
+}
+.FeTuTitle p 
+{
+    font-size: 25px;
+    color: rgb(119, 118, 112);
+}
+
+
+.row2              
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+/* Title for FeTu Photos */
+.col-4 
+{   
+    box-shadow:rgb(220, 225, 240);
+    cursor: pointer; 
+    transition: 0.5s;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+}
+.col-4:hover 
+{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+}
+.col-4 img 
+{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.col-4 h2 
+{
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.col-4 h2:hover 
+{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);   
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: translateY(-5px);
+}
+
+
+
+/* Footer */
+.footer 
+{
+    background-color: black;
+    margin: 0 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+            /*Social Media*/
+
+.socialmedia 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+  }
+.fa-facebook 
+{
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+} 
+.fa-google {
+    background: #dd4b39;
+    color: white;
+  }
