@@ -19,7 +19,7 @@ body
 {
     background: radial-gradient(#fff,rgb(193, 205, 230));
     margin: 40px 60px 5px;
-    height: 445px;
+    height: 430px;
 }
 
 /* B. Outside BOX of Header */ 
@@ -92,35 +92,124 @@ a              /* No underline link + color */
     background:rgb(170, 186, 219);
 }
 
-/* D. LEFT & RIGHT STYLE BOX */
-
-.row            /* Outside box */
+/* D. IMAGE SLIDER */
+.section 
 {
+    padding: 0 40px;
+    margin: auto;
+    height: 259px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+}
+.slider
+{
+    width: 800px;
+    height: 249px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.slide
+{
+    width: 500%;
+    height: 339px;
+    display: flex;
+} 
+/* Button (Empty circle) */
+.slide input   
+{
+    display: none;
 }
 
-.col-2          /* Left & Right Box together */
+/*Photo*/
+.photo 
 {
-    flex-basis: 50%;
-    min-width: 300px;
+    width: 20%;
+    transition: 2s;
+}
+.photo img {
+    width: 800px;
+    height: 492px;
 }
 
-.col-2 h1      /* (left) H1 */
+/* Button (Filled circle) */
+.nav-m 
 {
-    font-size: 40px;
-    line-height: 42px;
-    margin: 25px 0;      /* space btw h1 & p */
+    position: absolute;
+    width: 55%; 
+    margin-top: -120px;
+    display: flex;
+    justify-content: center;
+}
+.m-btn 
+{
+    border: 2px solid #23e3c2;
+    padding: 5px; 
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child)
+{
+    margin-right: 30px;
+}
+.m-btn:hover 
+{
+    background-color: #23e3c2;
 }
 
-.col-2 img     /* (right) Photo */
+/* Button connects w 1st Photo */
+#radio1:checked ~.first 
 {
-    max-width: 100%;
-    padding: 14px 14px;
-    height: 280px;
+    margin-left: 0;
 }
+#radio2:checked ~.first 
+{
+    margin-left: -20%;
+}
+#radio3:checked ~.first 
+{
+    margin-left: -40%;
+}
+
+/* Auto Slider */
+.nav-auto 
+{
+    position: absolute;
+    width: 55%;
+    margin-top: 219px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div 
+{
+    border: 2px solid #23e3c2;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child)
+{
+    margin-right: 30px;
+    justify-content: center;
+}
+
+/* Button connects w Auto Slider */
+#radio1:checked ~ .nav-auto .a-b1
+{
+    background-color: #23e3c2;
+}
+#radio2:checked ~ .nav-auto .a-b2
+{
+    background-color: #23e3c2;
+}
+#radio3:checked ~ .nav-auto .a-b3
+{
+    background-color: #23e3c2;
+} 
+
+
 
 .btn           /* Words with Background Color */
 {    
@@ -147,7 +236,7 @@ a              /* No underline link + color */
 /*-------------Featured Products--------------*/
 .FeProduct 
 {
-    margin: 0 60px;
+    margin: 20px 0px 0px 0px;
     padding-top: 40px;
     padding-bottom: 60px;
     background: radial-gradient(#fff,rgb(193, 205, 230));
@@ -223,7 +312,6 @@ a              /* No underline link + color */
 .footer 
 {
     background-color: black;
-    margin: 0 60px;
     padding-top: 40px;
     padding-bottom: 40px;
 }

@@ -42,82 +42,113 @@
 
             </div>
 
-            <!--LEFT & RIGHT STYLE BOX-->
-            <div class="row">
+            <!--IMAGE SLIDER-->
+            <section class="section">
 
-                <!--(LEFT) H1 tille + paragraph-->
-                <div class="col-2">
-                    <h1>LY LY <br> COLLECTION</h1>
-                    <p>
-                        Latest modern style for all ages.
-                    </p>
-                    <!--Button-->
-                    <a href="" class="btn">Explore More &#8594;</a>
+                <div class="slider">
+
+                    <!--Button (Empty circle) & Image  +  Auto Slide-->
+                    <div class="slide">
+                        <input type="radio" name="button-slide" id="radio1">
+                        <input type="radio" name="button-slide" id="radio2">
+                        <input type="radio" name="button-slide" id="radio3">
+
+
+                        <!--Photo 1 2 3-->
+                        <div class="photo first">
+                            <img src="Photo/Model.png">
+                        </div>
+                        <div class="photo">
+                            <img src="Photo/pink_T-shirt.jpeg">
+                        </div>
+                        <div class="photo">
+                            <img src="Photo/white_T-shirt.png">
+                        </div>
+
+                        <!--Auto Slide-->
+                        <div class="nav-auto">
+                            <div class="a-b1"></div>
+                            <div class="a-b2"></div>
+                            <div class="a-b3"></div>
+                        </div>
+                    </div>
+                    <!--slide-->
+
+                    <!--Button (Filled circle)-->
+                    <div class="nav-m">
+                        <label for="radio1" class="m-btn"></label>
+                        <label for="radio2" class="m-btn"></label>
+                        <label for="radio3" class="m-btn"></label>
+                    </div>
+
                 </div>
+                <!--slider-->
+            </section>
+            <!--container-->
+        </div>
+        <!--header-->
+    
+    <!-- Javascript Function for Button + Image -->
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 3) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
 
-                <!--(RIGHT) Photo-->
-                <div class="col-2">
-                    <img src="Photo/Model.png">
+
+
+
+        <!--Featured Products-->
+        <div class="FeProduct">
+            <!--Title-->
+            <div class="FeTuTitle">
+                <h1>Featured Products</h1>
+                <p>Check out your favorite category</p>
+            </div>
+
+            <!--Inside BOX of Products-->
+            <div class="row2">
+                <div class="col-4">
+                    <a href="T-shirt.html"><img src="Photo/FeTuPurpleTshirt.png"></a>
+                    <a href="T-shirt.html">
+                        <h2>T-Shirt</h2>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <img src="Photo/FeTuJeans.png">
+                    <h2>Jeans</h2>
+                </div>
+                <div class="col-4">
+                    <img src="Photo/FeTuSkirt.png">
+                    <h2>Skirt</h2>
                 </div>
             </div>
 
         </div>
-        <!--container-->
+        <!--FeProduct-->
 
-    </div>
-    <!--header-->
-
-
-
-  
-
-
-    <!--Featured Products-->
-    <div class="FeProduct">
-        <!--Title-->
-        <div class="FeTuTitle">
-            <h1>Featured Products</h1>
-            <p>Check out your favorite category</p>
-        </div>
-
-        <!--Inside BOX of Products-->
-        <div class="row2">
-            <div class="col-4">
-                <a href="T-shirt.html"><img src="Photo/FeTuPurpleTshirt.png"></a>
-                <a href="T-shirt.html">
-                    <h2>T-Shirt</h2>
-                </a>
+        <!--Footer-->
+        <div class="footer">
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/people/Linh-Trinh/100058729089213/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/linhtrinh9763/" class="fa fa-instagram"></a>
+                <a href="mailto:trinhlinh444@gmail.com" class="fa fa-google"></a>
             </div>
-            <div class="col-4">
-                <img src="Photo/FeTuJeans.png">
-                <h2>Jeans</h2>
+            <div class="footermenu">
+                <ul>
+                    <li class="footerbutton"><a href="#">About LyLy</a></li>
+                    <li class="footerbutton"><a href="#">Contact</a></li>
+                    <li class="footerbutton"><a href="#">Sign Up</a></li>
+                    <li class="footerbutton"><a href="#">Promotions</a></li>
+                </ul>
             </div>
-            <div class="col-4">
-                <img src="Photo/FeTuSkirt.png">
-                <h2>Skirt</h2>
-            </div>
+            <p>@2022 Ly Ly Collection</p>
         </div>
-
-    </div>
-    <!--FeProduct-->
-
-    <!--Footer-->
-    <div class="footer">
-        <div class="socialmedia">
-            <a href="https://www.facebook.com/people/Linh-Trinh/100058729089213/" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/linhtrinh9763/" class="fa fa-instagram"></a>
-            <a href="mailto:trinhlinh444@gmail.com" class="fa fa-google"></a>
-        </div>
-        <div class="footermenu">
-            <ul>
-                <li class="footerbutton"><a href="#">About LyLy</a></li>
-                <li class="footerbutton"><a href="#">Contact</a></li>
-                <li class="footerbutton"><a href="#">Sign Up</a></li>
-                <li class="footerbutton"><a href="#">Promotions</a></li>
-            </ul>
-        </div>
-        <p>@2022 Ly Ly Collection</p>
-    </div>
 
 </body>
 
