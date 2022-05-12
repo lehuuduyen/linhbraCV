@@ -405,3 +405,51 @@ a              /* No underline link + color */
     color: rgb(201, 195, 195);
     padding: 20px;
 }
+
+
+/* Best Seller */
+.pro-container
+{
+    margin: 10px 0px 0px 0px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background: radial-gradient(#fff,rgb(193, 205, 230));
+}
+.pro-container h1
+{
+    text-align: center;
+    padding: 20px;
+}
+.pro-box              
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pro-box img 
+{
+    height: 150px;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+.pro-box img:hover 
+{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+/* star */
+.star
+{
+    margin: 0;
+    text-indent: -3px;
+}
+.star .fa
+{
+    width: 5px;
+    margin: 5px;
+    padding: 0px;
+    color: rgb(59, 95, 161);
+}
+
+
